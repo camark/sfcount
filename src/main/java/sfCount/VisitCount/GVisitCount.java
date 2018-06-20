@@ -22,10 +22,11 @@ public class GVisitCount {
                 String query = "select visit_count from sf_count where id=1";
 
                 try(Statement stmt = dbConn.createStatement()){
-                    ResultSet rs = stmt.executeQuery(query);
-                    rs.next();
+                    try(ResultSet rs = stmt.executeQuery(query)) {
+                        rs.next();
 
-                    visit_count = rs.getInt("visit_count");
+                        visit_count = rs.getInt("visit_count");
+                    }
                 }
             }
 

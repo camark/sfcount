@@ -13,6 +13,16 @@ public class App
 {
     public static void main( String[] args )
     {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                InitGUI();
+            }
+        });
+
+    }
+
+    private static void InitGUI() {
         //System.out.println( "Hello World!" );
 
         //JFrame.setDefaultLookAndFeelDecorated(true);
@@ -23,7 +33,5 @@ public class App
         mainForm.setTitle("安全助手使用次数");
         //mainForm.pack();
         mainForm.setVisible(true);
-
-
     }
 }

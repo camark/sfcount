@@ -28,8 +28,6 @@ public class GVisitCount {
 
             visit_count = rs.getInt("visit_count");
 
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -12,6 +12,10 @@ public class MainForm extends JFrame {
     JFrame self=this;
     public MainForm()
     {
+        Font font = new Font("Courier", Font.BOLD,60);
+
+        //set font for JLabel
+        count.setFont(font);
         count.setText("Hello Jframe");
         count.setHorizontalAlignment(SwingConstants.CENTER);
 

@@ -15,13 +15,15 @@ public class App
     {
         //System.out.println( "Hello World!" );
 
+        //JFrame.setDefaultLookAndFeelDecorated(true);
         MainForm mainForm=new MainForm();
         GVisitCount gv=new GVisitCount();
         mainForm.setCountText(gv.getCount());
 
         mainForm.setTitle("安全助手使用次数");
+        //mainForm.pack();
         mainForm.setVisible(true);
 
-        mainForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
 }

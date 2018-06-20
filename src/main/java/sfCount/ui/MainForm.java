@@ -36,6 +36,7 @@ public class MainForm extends JFrame {
         add(btnClose,BorderLayout.SOUTH);
 
         setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public void setCountText(int iCount){
